@@ -1,0 +1,22 @@
+{
+    "plugins": [
+      "prettier"
+    ],
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:prettier/recommended"
+    ],
+    "env": {
+      "browser": true
+    },
+    "rules": {
+      "@typescript-eslint/no-explicit-any": [
+        "error",
+        {
+          "ignoreRestArgs": true
+        }
+      ],
+      "prettier/prettier": "error"
+    }
+  }
