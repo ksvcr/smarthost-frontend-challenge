@@ -1,0 +1,9 @@
+.table {
+  width: 100%;
+  font-size: var(--font-size-lg);
+}
+
+.type {
+  font-weight: bold;
+  text-transform: capitalize;
+}
