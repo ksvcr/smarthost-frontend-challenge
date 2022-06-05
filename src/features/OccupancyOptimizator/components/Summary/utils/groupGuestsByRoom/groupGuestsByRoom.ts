@@ -34,9 +34,8 @@ export const groupGuestsByRoom = (rooms: Rooms, guests: Guest[]): Groups => {
     }
   }
 
-  const economyGuestsLength = sortedGuests.length - economyStartIndex;
-
   while (true) {
+    const economyGuestsLength = sortedGuests.length - economyStartIndex;
     const hasEmptyPremiumRoom = groups.premium.occupiedRooms < rooms.premium;
     const hasExtraEconomyGuests = economyGuestsLength > rooms.economy - groups.economy.occupiedRooms;
     const isUpgradePossible = hasExtraEconomyGuests && hasEmptyPremiumRoom;
