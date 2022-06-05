@@ -1,0 +1,13 @@
+.card {
+  padding: var(--space-lg);
+  border: 1px solid var(--border-color-base);
+  border-radius: var(--border-radius-base);
+}
+
+.card + .card {
+  margin-top: var(--space-lg);
+}
+
+.title {
+  margin: 0 0 var(--space-md);
+}
