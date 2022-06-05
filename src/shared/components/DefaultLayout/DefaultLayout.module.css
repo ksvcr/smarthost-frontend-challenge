@@ -1,3 +1,5 @@
 .layout {
   padding: var(--space-lg);
+  max-width: var(--layout-width);
+  margin: 0 auto;
 }

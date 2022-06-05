@@ -1,0 +1,15 @@
+.field {
+  font-size: var(--font-size-lg);
+}
+
+.field + .field {
+  margin-top: var(--space-md);
+}
+
+.value {
+  margin-top: var(--space-xs);
+}
+
+.label {
+  color: var(--secondary-color);
+}

@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import styles from './Field.module.css';
 
 type FieldProps = {
   children: ReactNode;
@@ -8,10 +9,13 @@ type FieldProps = {
 
 export const Field = ({ children, id, label }: FieldProps) => {
   return (
-    <div>
-      {label && <label htmlFor={id}>{label}</label>}
-
-      {children}
+    <div className={styles.field}>
+      {label && (
+        <label className={styles.label} htmlFor={id}>
+          {label}:
+        </label>
+      )}
+      <div className={styles.value}>{children}</div>
     </div>
   );
 };

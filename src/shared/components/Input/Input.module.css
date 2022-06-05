@@ -3,4 +3,5 @@
   padding: var(--space-xs);
   border: none;
   border: 1px solid var(--border-color-base);
+  font-size: var(--font-size-lg);
 }
