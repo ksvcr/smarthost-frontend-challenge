@@ -27,9 +27,11 @@ export const Summary = () => {
     <Card title="Summary">
       <table className={styles.table}>
         <thead>
-          <td />
-          <td>Usage</td>
-          <td>Revenue</td>
+          <tr>
+            <td />
+            <td>Usage</td>
+            <td>Revenue</td>
+          </tr>
         </thead>
         <tbody>
           {rows.map(({ type, total, occupiedRooms }) => (
