@@ -1,4 +1,4 @@
-import { Guest, RoomType, Rooms, Groups } from './types';
+import { Guest, RoomType, Rooms, Groups } from 'shared/types';
 
 const PREMIUM_LIMIT = 100;
 
