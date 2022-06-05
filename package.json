@@ -2,6 +2,7 @@
   "name": "smarthost-frontend-challenge",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ksvcr.github.io/smarthost-frontend-challenge",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.0",
     "prettier": "^2.6.2"
@@ -29,7 +31,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "prepare": "husky install",
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
