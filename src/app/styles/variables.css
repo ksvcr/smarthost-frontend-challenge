@@ -25,5 +25,7 @@
   --space-xs: 8px;
   --space-xss: 4px;
 
-  --layout-width: 900px;
+  --layout-max-width: 900px;
+  --layout-min-width: 320px;
+
 }
