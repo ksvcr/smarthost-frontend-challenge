@@ -1,6 +1,6 @@
 # smarthost-frontend-challenge
 
-Application for generating a form from a json schema.
+Application for hotel occupancy optimization.
 
 [Demo](https://ksvcr.github.io/smarthost-frontend-challenge/)
 
