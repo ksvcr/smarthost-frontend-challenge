@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/smarthost-frontend-challenge/static/css/main.e26590b7.css",
+    "main.css": "/smarthost-frontend-challenge/static/css/main.c9903ff3.css",
     "main.js": "/smarthost-frontend-challenge/static/js/main.f370a66a.js",
     "static/js/787.1af04a29.chunk.js": "/smarthost-frontend-challenge/static/js/787.1af04a29.chunk.js",
     "static/media/NotoSans-Regular.woff": "/smarthost-frontend-challenge/static/media/NotoSans-Regular.03c0844f30ea285933b0.woff",
@@ -8,12 +8,12 @@
     "static/media/NotoSans-Regular.woff2": "/smarthost-frontend-challenge/static/media/NotoSans-Regular.1ded6c4362cd8298ba85.woff2",
     "static/media/NotoSans-Bold.woff2": "/smarthost-frontend-challenge/static/media/NotoSans-Bold.6edd3a682b6b86e8ea69.woff2",
     "index.html": "/smarthost-frontend-challenge/index.html",
-    "main.e26590b7.css.map": "/smarthost-frontend-challenge/static/css/main.e26590b7.css.map",
+    "main.c9903ff3.css.map": "/smarthost-frontend-challenge/static/css/main.c9903ff3.css.map",
     "main.f370a66a.js.map": "/smarthost-frontend-challenge/static/js/main.f370a66a.js.map",
     "787.1af04a29.chunk.js.map": "/smarthost-frontend-challenge/static/js/787.1af04a29.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e26590b7.css",
+    "static/css/main.c9903ff3.css",
     "static/js/main.f370a66a.js"
   ]
 }
