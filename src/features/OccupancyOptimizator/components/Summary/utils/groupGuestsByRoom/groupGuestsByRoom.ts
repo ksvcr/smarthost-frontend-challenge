@@ -1,4 +1,4 @@
-import { Guest, RoomType, Rooms, Groups } from 'shared/types';
+import { Guest, RoomType, Rooms, Groups } from 'features/OccupancyOptimizator/types';
 
 const PREMIUM_LIMIT = 100;
 

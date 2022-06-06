@@ -1,6 +1,7 @@
 import { groupGuestsByRoom } from './groupGuestsByRoom';
-import { Rooms, Groups } from 'shared/types';
-import { GUESTS } from 'features/OccupancyOptimizator/constants/guests';
+
+import { Rooms, Groups } from 'features/OccupancyOptimizator/types';
+import { GUESTS } from '../../constants/guests';
 
 const cases: Array<[Rooms, Groups]> = [
   [

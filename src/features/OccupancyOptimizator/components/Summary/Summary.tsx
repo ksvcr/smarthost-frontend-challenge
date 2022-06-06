@@ -1,8 +1,12 @@
+import { useMemo } from 'react';
+
 import { Card } from 'shared/components/Card';
-import { useGetSummary } from './useGetSummary';
+import { Rooms } from 'features/OccupancyOptimizator/types';
+
+import { groupGuestsByRoom } from './utils/groupGuestsByRoom';
+import { GUESTS } from './constants/guests';
 
 import styles from './Summary.module.css';
-import { useMemo } from 'react';
 
 type Row = {
   type: string;
@@ -10,18 +14,20 @@ type Row = {
   occupiedRooms: number;
 };
 
-export const Summary = () => {
-  const results = useGetSummary();
+type SummaryProps = {
+  rooms: Rooms;
+};
 
-  const rows: Row[] = useMemo(
-    () =>
-      Object.entries(results).map(([type, { total, occupiedRooms }]) => ({
-        type,
-        total,
-        occupiedRooms
-      })),
-    [results]
-  );
+export const Summary = ({ rooms }: SummaryProps) => {
+  const rows: Row[] = useMemo(() => {
+    const groups = groupGuestsByRoom(rooms, GUESTS);
+
+    return Object.entries(groups).map(([type, { total, occupiedRooms }]) => ({
+      type,
+      total,
+      occupiedRooms
+    }));
+  }, [rooms]);
 
   return (
     <Card title="Summary">

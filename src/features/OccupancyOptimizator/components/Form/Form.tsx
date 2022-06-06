@@ -1,16 +1,17 @@
 import { ChangeEvent } from 'react';
 
-import { RoomType } from 'shared/types';
+import { RoomType, Rooms } from 'features/OccupancyOptimizator/types';
 
 import { Input } from 'shared/components/Input';
 import { Field } from 'shared/components/Field';
 import { Card } from 'shared/components/Card';
 
-import { useForm } from './FormContext';
+type FormProps = {
+  rooms: Rooms;
+  onChange: (type: RoomType, value: number) => void;
+};
 
-export const Form = () => {
-  const { formData, onChange } = useForm();
-
+export const Form = ({ rooms, onChange }: FormProps) => {
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { value, id } = e.target;
     onChange(id as RoomType, Number(value));
@@ -20,10 +21,10 @@ export const Form = () => {
     <Card title="Available rooms">
       <form>
         <Field label="Economy" id="economy">
-          <Input type="number" value={formData.economy} onChange={handleInputChange} id="economy" min={0} />
+          <Input type="number" value={rooms.economy} onChange={handleInputChange} id="economy" min={0} />
         </Field>
         <Field label="Premium" id="premium">
-          <Input type="number" value={formData.premium} onChange={handleInputChange} id="premium" min={0} />
+          <Input type="number" value={rooms.premium} onChange={handleInputChange} id="premium" min={0} />
         </Field>
       </form>
     </Card>

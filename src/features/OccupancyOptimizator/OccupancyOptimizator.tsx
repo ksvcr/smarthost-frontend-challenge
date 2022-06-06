@@ -1,12 +1,16 @@
-import { Form, FormContextProvider } from './components/Form';
+import { Form } from './components/Form';
 import { Summary } from './components/Summary';
 
+import { useStoreRooms } from './useStoreRooms';
+
 export const OccupancyOptimizator = () => {
+  const { rooms, onChange } = useStoreRooms();
+
   return (
-    <FormContextProvider>
+    <>
       <h1>Occupancy Optimizator</h1>
-      <Form />
-      <Summary />
-    </FormContextProvider>
+      <Form rooms={rooms} onChange={onChange} />
+      <Summary rooms={rooms} />
+    </>
   );
 };
