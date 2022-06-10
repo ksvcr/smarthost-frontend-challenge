@@ -83,6 +83,22 @@ const cases: Array<[Rooms, Groups]> = [
         total: 1221
       }
     }
+  ],
+  [
+    {
+      economy: 0,
+      premium: 10
+    },
+    {
+      economy: {
+        occupiedRooms: 0,
+        total: 0
+      },
+      premium: {
+        occupiedRooms: 10,
+        total: 1243
+      }
+    }
   ]
 ];
 
