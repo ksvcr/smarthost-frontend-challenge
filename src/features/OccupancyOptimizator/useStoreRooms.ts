@@ -1,4 +1,4 @@
-import { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback } from 'react';
 
 import { Rooms, RoomType } from './types';
 
@@ -9,5 +9,5 @@ export function useStoreRooms() {
     setRooms(data => ({ ...data, [type]: value }));
   }, []);
 
-  return useMemo(() => ({ rooms, onChange: handleChange }), [rooms, handleChange]);
+  return { rooms, onChange: handleChange };
 }
